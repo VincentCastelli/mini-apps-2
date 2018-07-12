@@ -51,10 +51,6 @@
       2,
       "always"
     ],
-    "react/jsx-indent": [
-      2,
-      4
-    ],
     "react/prop-types": [
       2
     ],

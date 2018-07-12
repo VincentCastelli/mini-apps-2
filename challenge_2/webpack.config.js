@@ -1,5 +1,4 @@
 const path = require( 'path' );
-const serve = require( 'webpack-serve' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 
 module.exports = {
@@ -8,8 +7,8 @@ module.exports = {
     extensions: [ '.js', '.jsx' ],
   },
   output: {
-    path: path.resolve( __dirname, 'public/dist' ),
-    filename: '/bundle.js',
+    path: path.resolve( __dirname, 'public/dist/' ),
+    filename: 'bundle.js',
   },
   module: {
     rules: [

@@ -1,12 +1,12 @@
-import { React } from 'react';
-import { ReactDOM } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const App = () => {
-    return (
-        <p>
+  return (
+    <p>
       This works!
-        </p>
-    );
+    </p>
+  );
 };
 
 export default App;
