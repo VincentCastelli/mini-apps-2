@@ -18,7 +18,6 @@ class App extends React.Component {
   handleClick() {
     axios.get( this.state.url )
       .then( ( response ) => {
-        console.log( response.data.bpi );
         const chartLabels = Object.keys( response.data.bpi );
         const chartDataset = Object.values( response.data.bpi );
         this.setState( {
@@ -26,7 +25,6 @@ class App extends React.Component {
           dataset: chartDataset,
         } );
       } );
-    console.log( this.dataset );
   }
 
   render() {
@@ -45,9 +43,9 @@ class App extends React.Component {
             chartDataset={ this.state.dataset }
           />
         </div>
-        <p>
+        <a href="https://www.coindesk.com/price/">
             Powered by Coindesk
-        </p>
+        </a>
       </div>
     );
   }
