@@ -1,7 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
 
-const srcDir = path.join(__dirname, '/client/src');
+const srcDir = path.join(__dirname, '/src');
 const distDir = path.join(__dirname, '/public/dist');
 
 module.exports = {
@@ -64,5 +63,5 @@ module.exports = {
         use: 'url-loader?limit=10000&mimetype=image/svg+xml',
       },
     ],
-  }
-}
+  },
+};
