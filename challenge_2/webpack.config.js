@@ -1,7 +1,7 @@
 const path = require( 'path' );
 
 module.exports = {
-  entry: { main: './src/client/App.jsx' },
+  entry: { main: './src/index.jsx' },
   resolve: {
     extensions: [ '.js', '.jsx' ],
   },
