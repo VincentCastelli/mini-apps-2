@@ -33,6 +33,7 @@ class Chart extends React.Component {
     return (
       <div>
         <div>
+          {'Select a chart type: '}
           <select onChange={ this.handleChange }>
             <option value="line">
               Line
