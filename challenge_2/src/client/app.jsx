@@ -35,9 +35,9 @@ class App extends React.Component {
         <h1>
             Cryptocurrency Charting Tool
         </h1>
-        <p>
+        <h3>
             Bitcoin Price Index (BPI) | USD
-        </p>
+        </h3>
         <div>
           <Chart
             onClick={ this.handleClick }
@@ -45,7 +45,7 @@ class App extends React.Component {
             chartDataset={ this.state.dataset }
           />
         </div>
-        <p className="poweredBy">
+        <p>
             Powered by Coindesk
         </p>
       </div>
