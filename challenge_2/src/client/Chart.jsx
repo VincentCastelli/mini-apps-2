@@ -1,26 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Line } from 'react-chartjs-2'; // add Bar
+import { Line, Bar } from 'react-chartjs-2';
 
 class Chart extends React.Component {
   constructor( props ) {
     super( props );
 
     this.state = {
-
+      value: 'line',
     };
 
-    // this.handleChange = this.handleChange.bind( this );
+    this.handleChange = this.handleChange.bind( this );
   }
 
-  // handleChange( evt ) {
-  //   console.log( evt );
-  // }
+  handleChange( evt ) {
+    this.setState( {
+      value: evt.target.value,
+    } );
+  }
 
   render() {
     const data = {
       labels: this.props.chartLabels,
       datasets: [ {
+        label: 'Bitcoin Price Index',
         data: this.props.chartDataset,
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -43,14 +46,35 @@ class Chart extends React.Component {
     };
     return (
       <div>
-        <Line
-          data={ data }
-          width={ 600 }
-          height={ 200 }
-          options={ {
-            maintainAspectRatio: false,
-          } }
-        />
+        <div>
+          <select onChange={ this.handleChange }>
+            <option value="line">
+              Line
+            </option>
+            <option value="bar">
+              Bar
+            </option>
+          </select>
+        </div>
+        {
+        ( this.state.value === 'line' ) ?
+          <Line
+            data={ data }
+            width={ 600 }
+            height={ 200 }
+            options={ {
+              maintainAspectRatio: false,
+            } }
+          /> :
+          <Bar
+            data={ data }
+            width={ 600 }
+            height={ 200 }
+            options={ {
+              maintainAspectRatio: false,
+            } }
+          />
+        }
         <div>
           <button type="submit" onClick={ this.props.onClick }>
             Search

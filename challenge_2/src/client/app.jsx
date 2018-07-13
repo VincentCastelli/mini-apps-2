@@ -45,7 +45,7 @@ class App extends React.Component {
             chartDataset={ this.state.dataset }
           />
         </div>
-        <p>
+        <p className="poweredBy">
             Powered by Coindesk
         </p>
       </div>
