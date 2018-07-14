@@ -2,60 +2,146 @@ import React from 'react';
 
 const Scoresheet = () => (
 
-  <ul>
-    <li className="cell name">Name</li>
-    <li className="cell frame">1</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">2</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">3</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">4</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">5</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">6</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">7</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">8</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">9</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell frame">10</li>
-    <ul>
-      <li>F1</li>
-      <li>F2</li>
-      <li>F2</li>
-    </ul>
-    <li className="cell score">Total Score</li>
+  <ul className="scoresheet">
+    <li className="cell name">
+      Name
+    </li>
+    <li className="cell">
+      <div className="frame">
+        1
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        2
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        3
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        4
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        5
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        6
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        7
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        8
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        9
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+      </ul>
+    </li>
+    <li className="cell">
+      <div className="frame">
+        10
+      </div>
+      <ul>
+        <li className="cell bowl">
+          F1
+        </li>
+        <li className="cell bowl">
+          F2
+        </li>
+        <li className="cell bowl">
+          F3
+        </li>
+      </ul>
+    </li>
+    <li className="cell score">
+      Total Score
+    </li>
   </ul>
 );
 

@@ -1,0 +1,40 @@
+.scoresheet {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+}
+.cell {
+  list-style: none;
+  list-style-position:inside;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+}
+
+.name, .score {
+  position: relative;
+  flex: 2;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.cell div{
+  font-size: 24px;
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+ 
+}
+
+.bowl {
+  position: relative;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}

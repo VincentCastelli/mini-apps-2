@@ -6,16 +6,16 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      player: '',
-      currentScore: 0
-    }
+      // player: '',
+      // currentScore: 0
+    };
   }
-  render(){
+  render() {
     return (
       <Scoresheet />
     );
   }
-};
+}
 
 export default App;
 
