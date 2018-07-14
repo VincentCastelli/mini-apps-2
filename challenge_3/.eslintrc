@@ -25,7 +25,7 @@
             }
         ],
         "react/destructuring-assignment": [
-            1
+            0
         ]
     },
     "extends": [

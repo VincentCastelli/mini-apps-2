@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Scoresheet = () => (
-
+const Scoresheet = props => (
   <ul className="scoresheet">
     <li className="cell name">
-      Name
+      {props.player}
     </li>
     <li className="cell">
       <div className="frame">
@@ -144,5 +144,9 @@ const Scoresheet = () => (
     </li>
   </ul>
 );
+
+Scoresheet.propTypes = {
+  player: PropTypes.string.isRequired,
+};
 
 export default Scoresheet;
